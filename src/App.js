@@ -15,7 +15,9 @@ export default class App extends Component {
   pageSize=10
   country="in"
   //apikey="170ccfe47e0c4d4c8c52ee71e3d19dc7"
-  apikey="d093053d72bc40248998159804e0e67d"
+  //apikey="d093053d72bc40248998159804e0e67d"
+  apikey = process.env.REACT_APP_NEWS_API_KEY
+
   render() {
     return (
       <div>

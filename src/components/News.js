@@ -35,7 +35,7 @@ export class News extends Component {
             page: 1,
             totalResults: 0,
         }
-        document.title=`Daily News -${this.capitalizeFirstLetter(this.props.category)}`;
+        document.title=`Daily News - ${this.capitalizeFirstLetter(this.props.category)}`;
     }
   
     async updateNews() {
