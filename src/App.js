@@ -12,9 +12,10 @@ import {
 } from "react-router-dom";
 
 export default class App extends Component {
-  pageSize=20
+  pageSize=10
   country="in"
-  apikey="170ccfe47e0c4d4c8c52ee71e3d19dc7"
+  //apikey="170ccfe47e0c4d4c8c52ee71e3d19dc7"
+  apikey="d093053d72bc40248998159804e0e67d"
   render() {
     return (
       <div>
