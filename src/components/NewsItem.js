@@ -1,13 +1,12 @@
 //rce
 
-import React, { Component } from 'react'
+import React from 'react'
 
-export class NewsItem extends Component {
-  render() {
-      let {title, description , imageUrl, newsUrl, author, time, source} = this.props
+const NewsItem = (props) => {
+
+    let {title, description , imageUrl, newsUrl, author, time, source} = props
     return (
       <div className='my-3'>
-            { /* <div className="card" style={{width: "18rem"}}> */ }
             <div className="card">
             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style={{left: '30%', zIndex: '1'}}>{source}</span>
                 <img src={!imageUrl?'https://images.livemint.com/img/2022/04/15/600x338/OnePlus_10R_1650012854721_1650012855104.png':imageUrl} className="card-img-top" alt="..."/>
@@ -20,7 +19,6 @@ export class NewsItem extends Component {
             </div>
       </div>
     )
-  }
 }
 
 export default NewsItem
